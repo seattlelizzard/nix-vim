@@ -59,6 +59,8 @@ with final.pkgs.lib; let
     lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
     nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
     statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
+    nvim-tree-lua
+    nvim-web-devicons
     nvim-treesitter-context # nvim-treesitter-contiext
     catppuccin-nvim #Colors!
     semshi #Python Colors!

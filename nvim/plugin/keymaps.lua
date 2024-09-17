@@ -133,7 +133,7 @@ keymap.set('n', '<leader>tq', vim.cmd.tabclose, { desc = '[t]ab: [q]uit/close' }
 
 local severity = diagnostic.severity
 
-keymap.set('n', '<leader>e', function()
+keymap.set('n', '<leader>D', function()
   local _, winid = diagnostic.open_float(nil, { scope = 'line' })
   if not winid then
     vim.notify('no diagnostics found', vim.log.levels.INFO)
@@ -198,3 +198,4 @@ keymap.set('n', '<C-b>', '<C-b>zz', { desc = 'move UP full-page and center' })
 --     vim.opt.hlsearch = vim.tbl_contains({ '<CR>', 'n', 'N', '*', '#', '?', '/' }, vim.fn.keytrans(char))
 --   end
 -- end, auto_hlsearch_namespace)
+vim.keymap.set({"n", "v"}, "<leader>/", ":CommentToggle<cr>")
