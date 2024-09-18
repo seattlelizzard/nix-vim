@@ -196,6 +196,8 @@ keymap.set('n', '<C-b>', '<C-b>zz', { desc = 'move UP full-page and center' })
 -- vim.on_key(function(char)
 --   if vim.fn.mode() == 'n' then
 --     vim.opt.hlsearch = vim.tbl_contains({ '<CR>', 'n', 'N', '*', '#', '?', '/' }, vim.fn.keytrans(char))
---   end
+--   end 
 -- end, auto_hlsearch_namespace)
-vim.keymap.set({"n", "v"}, "<leader>/", ":CommentToggle<cr>")
+--
+--
+keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>")
