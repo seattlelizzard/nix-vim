@@ -6,4 +6,4 @@ null_ls.setup({
     null_ls.builtins.formatting.black
     --null_ls.builtins.diagnostics.ruff -- Perhaps one day... A fast rust based python linter.
 })
-vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
+vim.keymap.set('n', '<leader>rf', vim.lsp.buf.format, {})
