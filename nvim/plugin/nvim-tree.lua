@@ -4,7 +4,3 @@ require('nvim-tree').setup({
 })
 
 -- Set up key mapping to toggle NvimTree
-vim.keymap.set("n", "<leader>e", function()
-  require('nvim-tree.api').tree.toggle()
-end, { noremap = true, silent = true })
-

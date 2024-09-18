@@ -200,4 +200,7 @@ keymap.set('n', '<C-b>', '<C-b>zz', { desc = 'move UP full-page and center' })
 -- end, auto_hlsearch_namespace)
 --
 --
-keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>")
+keymap.set("n", "<leader>e", function()
+  require('nvim-tree.api').tree.toggle()
+end, {desc = 'Open File Tr[e]e', noremap = true, silent = true })
+
