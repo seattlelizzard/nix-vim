@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     gen-luarc.url = "github:mrcjkb/nix-gen-luarc-json";
+    neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";
 
     # Add bleeding-edge plugins here.
     # They can be updated with `nix flake update` (make sure to commit the generated flake.lock)
@@ -51,6 +52,7 @@
           nil
           stylua
           luajitPackages.luacheck
+          luajitPackages.lua-utils-nvim
         ];
         shellHook = ''
           # symlink the .luarc.json generated in the overlay

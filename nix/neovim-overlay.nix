@@ -51,13 +51,22 @@ with final.pkgs.lib; let
     # telescope and extensions
     telescope-nvim # https://github.com/nvim-telescope/telescope.nvim/
     telescope-fzy-native-nvim # https://github.com/nvim-telescope/telescope-fzy-native.nvim
+    none-ls-nvim #Auto formatting thingie!
+    vim-tmux-navigator #special sauce for tmux integration
     # telescope-smart-history-nvim # https://github.com/nvim-telescope/telescope-smart-history.nvim
     # ^ telescope and extensions
     # UI
     lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
     nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
     statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
-    nvim-treesitter-context # nvim-treesitter-context
+    nvim-comment #Comments!
+    nvim-tree-lua
+    nvim-web-devicons
+    nvim-treesitter-context # nvim-treesitter-contiext
+    catppuccin-nvim #Colors!
+    semshi #Python Colors!
+    bufferline-nvim #Bufferline formatting
+    neorg #Organization tool!
     # ^ UI
     # language support
     # ^ language support

@@ -4,7 +4,7 @@ local opt = vim.o
 local g = vim.g
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
--- g.mapleader = ' '
+g.mapleader = ' '
 -- g.maplocalleader = ' '
 
 opt.compatible = false
@@ -43,6 +43,11 @@ opt.splitbelow = true
 opt.cmdheight = 0
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+
+vim.cmd("colorscheme catppuccin-macchiato") -- set color theme
+require("bufferline").setup()
+
+
 
 -- Configure Neovim diagnostic messages
 

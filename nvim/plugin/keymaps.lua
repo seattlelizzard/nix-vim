@@ -128,12 +128,12 @@ keymap.set('c', '%%', function()
   end
 end, { expr = true, desc = "expand to current buffer's directory" })
 
-keymap.set('n', '<space>tn', vim.cmd.tabnew, { desc = '[t]ab: [n]ew' })
-keymap.set('n', '<space>tq', vim.cmd.tabclose, { desc = '[t]ab: [q]uit/close' })
+keymap.set('n', '<leader>tn', vim.cmd.tabnew, { desc = '[t]ab: [n]ew' })
+keymap.set('n', '<leader>tq', vim.cmd.tabclose, { desc = '[t]ab: [q]uit/close' })
 
 local severity = diagnostic.severity
 
-keymap.set('n', '<space>e', function()
+keymap.set('n', '<leader>D', function()
   local _, winid = diagnostic.open_float(nil, { scope = 'line' })
   if not winid then
     vim.notify('no diagnostics found', vim.log.levels.INFO)
@@ -196,5 +196,11 @@ keymap.set('n', '<C-b>', '<C-b>zz', { desc = 'move UP full-page and center' })
 -- vim.on_key(function(char)
 --   if vim.fn.mode() == 'n' then
 --     vim.opt.hlsearch = vim.tbl_contains({ '<CR>', 'n', 'N', '*', '#', '?', '/' }, vim.fn.keytrans(char))
---   end
+--   end 
 -- end, auto_hlsearch_namespace)
+--
+--
+keymap.set("n", "<leader>e", function()
+  require('nvim-tree.api').tree.toggle()
+end, {desc = 'Open File Tr[e]e', noremap = true, silent = true })
+
