@@ -20,7 +20,10 @@ end
 opt.path = vim.o.path .. '**'
 
 opt.number = true
-opt.relativenumber = true
+vim.opt.relativenumber = true
+vim.opt.number = true
+--vim.opt.signcolumn = "number"
+vim.o.statuscolumn = "%s %l %r"
 opt.cursorline = true
 opt.lazyredraw = true
 opt.showmatch = true -- Highlight matching parentheses, etc
